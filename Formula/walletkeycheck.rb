@@ -1,7 +1,7 @@
 class Walletkeycheck < Formula
   desc "Validate mnemonics, private keys, WIF, xpub/ypub/zpub, and HD wallet keys"
-  homepage "https://github.com/devdasx/wallet-key-validator-kit"
-  url "https://github.com/devdasx/wallet-key-validator-kit/releases/download/0.2.0/wallet-key-validator-kit-0.2.0.tgz"
+  homepage "https://github.com/OathWallet/wallet-key-validator-kit"
+  url "https://github.com/OathWallet/wallet-key-validator-kit/releases/download/0.2.0/wallet-key-validator-kit-0.2.0.tgz"
   sha256 "8d229b89800db9744e2f62166d32148c304aef343dca3e3cd64fed7ecb8a08fa"
   license "MIT"
 

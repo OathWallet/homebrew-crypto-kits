@@ -10,21 +10,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Tap checkout
-        run: brew tap devdasx/crypto-kits "$GITHUB_WORKSPACE"
+        run: brew tap OathWallet/crypto-kits "$GITHUB_WORKSPACE"
       - name: Audit formulae
         run: |
-          brew audit --strict devdasx/crypto-kits/bip39kit || true
-          brew audit --strict devdasx/crypto-kits/walletkeycheck || true
-          brew audit --strict devdasx/crypto-kits/walletaddrcheck || true
+          brew audit --strict OathWallet/crypto-kits/bip39kit || true
+          brew audit --strict OathWallet/crypto-kits/walletkeycheck || true
+          brew audit --strict OathWallet/crypto-kits/walletaddrcheck || true
       - name: Install and test bip39kit
         run: |
-          brew install --build-from-source devdasx/crypto-kits/bip39kit
-          brew test devdasx/crypto-kits/bip39kit
+          brew install --build-from-source OathWallet/crypto-kits/bip39kit
+          brew test OathWallet/crypto-kits/bip39kit
       - name: Install and test walletkeycheck
         run: |
-          brew install --build-from-source devdasx/crypto-kits/walletkeycheck
-          brew test devdasx/crypto-kits/walletkeycheck
+          brew install --build-from-source OathWallet/crypto-kits/walletkeycheck
+          brew test OathWallet/crypto-kits/walletkeycheck
       - name: Install and test walletaddrcheck
         run: |
-          brew install --build-from-source devdasx/crypto-kits/walletaddrcheck
-          brew test devdasx/crypto-kits/walletaddrcheck
+          brew install --build-from-source OathWallet/crypto-kits/walletaddrcheck
+          brew test OathWallet/crypto-kits/walletaddrcheck
